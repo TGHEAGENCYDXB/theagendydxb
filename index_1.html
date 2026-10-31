@@ -1,0 +1,1517 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Agency - Where chefs &amp; brands meet</title>
+<meta name="description" content="A culinary collective based in Dubai. We represent chefs and food brands, and produce the activations that bring them together. GCC · Europe · Worldwide.">
+<link rel="canonical" href="https://theagencydxb.com/">
+<meta name="theme-color" content="#241510">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Agency">
+<meta property="og:title" content="The Agency - Where chefs &amp; brands meet">
+<meta property="og:description" content="A culinary collective based in Dubai. We represent chefs and food brands, and produce the activations that bring them together.">
+<meta property="og:url" content="https://theagencydxb.com/">
+<!-- TODO: add a 1200×630 share image at /og.jpg and uncomment
+<meta property="og:image" content="https://theagencydxb.com/og.jpg"> -->
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%234A2D1E'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-style='italic' font-size='42' fill='%23EFE2C8' text-anchor='middle'%3E%26%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@200;500;800&family=DM+Mono:wght@400;500&family=Karla:ital,wght@0,300;0,400;0,500;1,400&display=swap">
+
+<style>
+/* ───────────────────────────────────────────────────────────
+   THE AGENCY - theagencydxb.com
+   Art direction: "the room and the printed card"
+   Dark olive-black = the dining room at night.
+   Bone panels     = the printed matter laid on the table.
+   Amber           = candlelight. Used only for structure.
+   ─────────────────────────────────────────────────────────── */
+
+:root{
+  --ground:      #241510;
+  --ground-2:    #2E1B13;
+  --ground-3:    #4A2D1E;
+  --bone:        #EFE2C8;
+  --bone-2:      #E2D2B4;
+  --bone-dim:    #B3A184;
+  --ink:         #241510;
+  --ink-dim:     #6B5240;
+  --amber:       #C89A5E;
+  --amber-deep:  #8C5A30;
+  --clay:        #8A4A2E;
+  --rule-dark:   rgba(239,226,200,.18);
+  --rule-light:  rgba(36,21,16,.15);
+
+  --display: "Bodoni Moda", "Didot", "Times New Roman", serif;
+  --body:    "Karla", "Helvetica Neue", Arial, sans-serif;
+  --mono:    "DM Mono", "SFMono-Regular", Consolas, monospace;
+  --brand:   "Jost", "Futura", "Avenir Next", sans-serif;
+  --arabic:  "Aref Ruqaa", "Noto Naskh Arabic", serif;
+
+  --gutter: clamp(20px, 5vw, 76px);
+  --max: 1320px;
+
+  color-scheme: dark;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+@media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--bone);
+  font-family:var(--body);
+  font-weight:300;
+  font-size:clamp(1rem,.94rem + .3vw,1.1rem);
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+img{ max-width:100%; height:auto; display:block; }
+
+::selection{ background:var(--amber); color:var(--ground); }
+
+a{ color:inherit; }
+
+:focus-visible{
+  outline:2px solid var(--amber);
+  outline-offset:3px;
+}
+
+/* ── Shared shells ─────────────────────────────────────── */
+
+.wrap{
+  width:100%;
+  max-width:var(--max);
+  margin-inline:auto;
+  padding-inline:var(--gutter);
+}
+
+section{ position:relative; }
+
+.band{ padding-block:clamp(72px,10vw,150px); }
+.band--tight{ padding-block:clamp(52px,6vw,88px); }
+
+/* The bone "printed card" panels */
+.paper{
+  background:var(--bone);
+  color:var(--ink);
+}
+.paper .eyebrow__num{ color:var(--amber-deep); }
+.paper .eyebrow__label{ color:var(--ink-dim); }
+.paper .lede{ color:var(--ink-dim); }
+
+/* ── Type roles ────────────────────────────────────────── */
+
+.eyebrow{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  margin:0 0 clamp(28px,4vw,52px);
+}
+.eyebrow__num{ color:var(--amber); }
+.eyebrow__label{ color:var(--bone-dim); }
+.eyebrow::after{
+  content:"";
+  flex:1;
+  height:1px;
+  background:currentColor;
+  opacity:.28;
+}
+
+h1,h2,h3,h4{
+  font-family:var(--display);
+  font-weight:400;
+  font-optical-sizing:auto;
+  text-wrap:balance;
+  margin:0;
+}
+
+.d-xl{ font-size:clamp(2.9rem,9.5vw,8rem); line-height:.92; letter-spacing:-.02em; }
+.d-l { font-size:clamp(2.1rem,5.6vw,4.4rem); line-height:1.02; letter-spacing:-.015em; }
+.d-m { font-size:clamp(1.6rem,3.2vw,2.6rem); line-height:1.12; letter-spacing:-.01em; }
+.d-s { font-size:clamp(1.25rem,2vw,1.6rem); line-height:1.2; }
+
+em, .it{ font-style:italic; }
+
+.lede{
+  max-width:62ch;
+  color:var(--bone-dim);
+  font-size:clamp(1.05rem,.98rem + .4vw,1.25rem);
+  line-height:1.6;
+}
+
+p{ margin:0 0 1.15em; max-width:64ch; }
+p:last-child{ margin-bottom:0; }
+
+.mono-tag{
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+
+/* ── Navigation ────────────────────────────────────────── */
+
+.nav{
+  position:fixed;
+  inset:0 0 auto 0;
+  z-index:60;
+  padding-top:env(safe-area-inset-top,0px);
+  background:rgba(36,21,16,.86);
+  backdrop-filter:saturate(140%) blur(14px);
+  -webkit-backdrop-filter:saturate(140%) blur(14px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s ease, background .3s ease;
+}
+.nav.is-stuck{ border-bottom-color:var(--rule-dark); }
+
+.nav__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  height:66px;
+}
+
+/* Brand lockup - Jost wordmark, extreme weight contrast */
+.mark{
+  display:inline-flex;
+  align-items:baseline;
+  gap:.6em;
+  text-decoration:none;
+  white-space:nowrap;
+  color:var(--bone);
+}
+.mark__wm{
+  font-family:var(--brand);
+  font-size:1.0625rem;
+  line-height:1;
+  letter-spacing:.03em;
+}
+.mark__wm .t{ font-weight:800; }
+.mark__wm .a{ font-weight:200; }
+.mark__dxb{
+  font-family:var(--brand);
+  font-weight:500;
+  font-size:.5625rem;
+  letter-spacing:.34em;
+  color:var(--amber);
+}
+
+/* Full badge - latin wordmark set at the optical centre of الوكالة */
+.badge{
+  display:inline-grid;
+  justify-items:center;
+  gap:18px;
+  background:var(--ground-3);
+  color:var(--bone);
+  padding:36px 44px 28px;
+  width:min(320px,100%);
+}
+.badge__stack{
+  position:relative;
+  display:grid;
+  place-items:center;
+  width:100%;
+}
+.badge__ar{
+  font-family:var(--arabic);
+  font-weight:700;
+  font-size:clamp(3.6rem,10vw,4.6rem);
+  line-height:1.5;
+  direction:rtl;
+  opacity:.3;
+  user-select:none;
+}
+.badge__wm{
+  position:absolute;
+  top:52%;
+  transform:translateY(-50%);
+  font-family:var(--brand);
+  font-size:clamp(.95rem,2.4vw,1.1rem);
+  letter-spacing:.05em;
+  display:flex;
+  gap:.42em;
+  line-height:1;
+}
+.badge__wm .t{ font-weight:800; }
+.badge__wm .a{ font-weight:200; }
+.badge__dxb{
+  font-family:var(--brand);
+  font-weight:500;
+  font-size:.625rem;
+  letter-spacing:.42em;
+  text-indent:.42em;
+  color:var(--bone-dim);
+}
+
+.nav__links{
+  display:flex;
+  align-items:center;
+  gap:clamp(16px,2vw,30px);
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.nav__links a{
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--bone-dim);
+  transition:color .2s ease;
+}
+.nav__links a:hover{ color:var(--bone); }
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.6em;
+  white-space:nowrap;
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding:.85em 1.4em;
+  border:1px solid var(--amber);
+  color:var(--amber);
+  background:transparent;
+  cursor:pointer;
+  transition:background .25s ease, color .25s ease;
+}
+.btn:hover{ background:var(--amber); color:var(--ground); }
+.btn--solid{ background:var(--amber); color:var(--ground); }
+.btn--solid:hover{ background:var(--bone); border-color:var(--bone); color:var(--ground); }
+
+.nav .btn__short{ display:none; }
+
+@media (max-width: 900px){
+  .nav__links{ display:none; }
+}
+@media (max-width: 560px){
+  .nav__inner{ height:58px; }
+  .mark{ font-size:.9375rem; }
+  .nav .btn{ padding:.7em 1.05em; }
+  .nav .btn__long{ display:none; }
+  .nav .btn__short{ display:inline; }
+}
+
+/* Anchored sections clear the fixed bar */
+section[id], main[id]{ scroll-margin-top:84px; }
+
+/* ── Hero ──────────────────────────────────────────────── */
+
+.hero{
+  padding-top:clamp(120px,16vh,190px);
+  padding-bottom:clamp(56px,7vw,96px);
+}
+
+.hero__eyebrow{
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--bone-dim);
+  margin:0 0 clamp(36px,6vw,64px);
+}
+
+.hero__title{ margin:0; }
+.hero__line{ display:block; }
+.hero__line--mid{
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:0 .32em;
+}
+.hero__amp{
+  font-style:italic;
+  color:var(--amber);
+}
+.hero__rule{
+  height:1px;
+  background:var(--rule-dark);
+  margin:clamp(28px,4vw,46px) 0 clamp(24px,3vw,36px);
+  transform-origin:left;
+}
+
+.hero__sub{
+  max-width:56ch;
+  font-size:clamp(1.05rem,1rem + .45vw,1.3rem);
+  line-height:1.55;
+  color:var(--bone);
+  margin:0;
+}
+
+.hero__meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px clamp(18px,3vw,40px);
+  margin-top:clamp(40px,5vw,64px);
+  padding-top:22px;
+  border-top:1px solid var(--rule-dark);
+  color:var(--bone-dim);
+}
+.hero__meta span:first-child{ color:var(--amber); }
+
+/* ── 01 Manifesto ──────────────────────────────────────── */
+
+.split{
+  display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  gap:clamp(32px,5vw,80px);
+  align-items:start;
+}
+@media (max-width: 860px){
+  .split{ grid-template-columns:1fr; }
+}
+
+.quote{
+  margin:clamp(40px,5vw,72px) 0 0;
+  padding-top:clamp(28px,3vw,40px);
+  border-top:1px solid var(--rule-dark);
+  font-family:var(--display);
+  font-style:italic;
+  font-size:clamp(1.35rem,2.8vw,2.15rem);
+  line-height:1.3;
+  max-width:24ch;
+  color:var(--bone);
+}
+
+/* ── 02 Positioning ────────────────────────────────────── */
+
+.verbs{
+  background:var(--ground-2);
+  border-block:1px solid var(--rule-dark);
+}
+.verbs__list{
+  list-style:none;
+  margin:0 0 clamp(32px,4vw,48px);
+  padding:0;
+}
+.verbs__list li{
+  font-family:var(--display);
+  font-size:clamp(2.4rem,7vw,5.6rem);
+  line-height:1.02;
+  letter-spacing:-.02em;
+}
+.verbs__list li:nth-child(2){ color:var(--amber); font-style:italic; }
+.verbs__list li:nth-child(3){ padding-left:.14em; }
+
+/* ── 03 The model ──────────────────────────────────────── */
+
+.model{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  gap:clamp(24px,3vw,56px);
+  align-items:stretch;
+  margin-top:clamp(44px,5vw,72px);
+}
+@media (max-width: 900px){
+  .model{ grid-template-columns:1fr; }
+}
+
+.model__col{
+  border-top:1px solid var(--amber);
+  padding-top:26px;
+}
+.model__kicker{
+  color:var(--amber);
+  margin:0 0 14px;
+}
+.model__list{
+  list-style:none;
+  margin:26px 0 0;
+  padding:0;
+  counter-reset:m;
+}
+.model__list li{
+  counter-increment:m;
+  display:grid;
+  grid-template-columns:2.3rem 1fr;
+  gap:12px;
+  padding:14px 0;
+  border-top:1px solid var(--rule-dark);
+  font-size:1rem;
+}
+.model__list li::before{
+  content:counter(m,decimal-leading-zero);
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.12em;
+  color:var(--bone-dim);
+  padding-top:.42em;
+}
+
+.model__join{
+  display:grid;
+  place-items:center;
+  gap:6px;
+  padding-block:clamp(16px,3vw,32px);
+}
+.model__amp{
+  font-family:var(--display);
+  font-style:italic;
+  font-size:clamp(3.4rem,7vw,6rem);
+  line-height:1;
+  color:var(--amber);
+}
+.model__join .mono-tag{ color:var(--bone-dim); }
+@media (max-width: 900px){
+  .model__join{ padding-block:10px; }
+}
+
+/* ── 04 Pillars (paper) ────────────────────────────────── */
+
+.pillars{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(248px,1fr));
+  gap:0;
+  margin-top:clamp(40px,5vw,64px);
+  border-top:1px solid var(--rule-light);
+}
+.pillar{
+  padding:clamp(26px,3vw,38px) clamp(20px,2.4vw,34px) clamp(32px,4vw,46px);
+  border-bottom:1px solid var(--rule-light);
+  border-right:1px solid var(--rule-light);
+}
+.pillar:first-child{ padding-left:0; }
+.pillar:last-child{ border-right:0; padding-right:0; }
+.pillar__no{
+  display:block;
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.2em;
+  color:var(--amber-deep);
+  margin-bottom:18px;
+}
+.pillar h3{ margin:0 0 14px; }
+.pillar p{ color:var(--ink-dim); font-size:.975rem; }
+
+@media (max-width: 760px){
+  .pillar,
+  .pillar:first-child,
+  .pillar:last-child{
+    padding-inline:0;
+    border-right:0;
+  }
+}
+
+/* ── 05 Activations ────────────────────────────────────── */
+
+.menu{
+  margin-top:clamp(44px,5vw,72px);
+  border-top:1px solid var(--rule-dark);
+}
+.course{
+  display:grid;
+  grid-template-columns:5.5rem minmax(0,1fr) minmax(0,1.15fr);
+  gap:clamp(16px,2.4vw,40px);
+  padding:clamp(24px,3vw,34px) 0;
+  border-bottom:1px solid var(--rule-dark);
+  transition:background .3s ease;
+}
+.course:hover{ background:var(--ground-2); }
+.course__code{
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.16em;
+  color:var(--amber);
+  padding-top:.5em;
+}
+.course__name{ margin:0; }
+.course__tag{
+  margin:10px 0 0;
+  font-family:var(--display);
+  font-style:italic;
+  font-size:1.0625rem;
+  color:var(--bone-dim);
+}
+.course__body{ color:var(--bone-dim); font-size:.975rem; }
+
+@media (max-width: 880px){
+  .course{ grid-template-columns:4.2rem 1fr; }
+  .course__body{ grid-column:2; }
+}
+@media (max-width: 520px){
+  .course{ grid-template-columns:1fr; gap:10px; }
+  .course__body{ grid-column:1; }
+  .course__code{ padding-top:0; }
+}
+
+.travel{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(20px,3vw,56px);
+  align-items:end;
+  margin-top:clamp(44px,5vw,68px);
+  padding-top:clamp(28px,3vw,40px);
+  border-top:1px solid var(--amber);
+}
+@media (max-width: 760px){ .travel{ grid-template-columns:1fr; align-items:start; } }
+.travel__label{ color:var(--amber); margin:0 0 14px; }
+
+/* ── 06 Approach ───────────────────────────────────────── */
+
+.principles{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:clamp(28px,3vw,56px);
+  margin-top:clamp(44px,5vw,68px);
+}
+.principle{
+  border-top:1px solid var(--rule-dark);
+  padding-top:24px;
+}
+.principle__no{
+  font-family:var(--display);
+  font-style:italic;
+  font-size:1.5rem;
+  color:var(--amber);
+  display:block;
+  margin-bottom:16px;
+}
+.principle h3{ margin:0 0 12px; }
+.principle p{ color:var(--bone-dim); font-size:.975rem; }
+
+/* ── 07 Process (paper) ────────────────────────────────── */
+
+.acts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:0;
+  margin-top:clamp(40px,5vw,64px);
+  border-top:1px solid var(--rule-light);
+}
+.act{
+  padding:clamp(24px,2.6vw,34px) clamp(18px,2vw,28px) clamp(30px,3.4vw,42px);
+  border-bottom:1px solid var(--rule-light);
+  border-right:1px solid var(--rule-light);
+  position:relative;
+}
+.act:first-child{ padding-left:0; }
+.act:last-child{ border-right:0; }
+.act__no{
+  display:block;
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.2em;
+  color:var(--amber-deep);
+  margin-bottom:16px;
+}
+.act h3{ margin:0 0 12px; }
+.act p{ color:var(--ink-dim); font-size:.9375rem; }
+
+@media (max-width: 760px){
+  .act,
+  .act:first-child{ padding-inline:0; border-right:0; }
+}
+
+/* ── 08 Numbers ────────────────────────────────────────── */
+
+.figures{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:clamp(24px,3vw,48px);
+  margin-top:clamp(40px,4vw,60px);
+}
+.figure__n{
+  font-family:var(--display);
+  font-size:clamp(2.6rem,5.5vw,4.2rem);
+  line-height:1;
+  color:var(--amber);
+  font-variant-numeric:tabular-nums;
+  display:block;
+}
+.figure__l{
+  display:block;
+  margin-top:14px;
+  color:var(--bone-dim);
+}
+
+.facts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  gap:clamp(18px,2.4vw,40px);
+  margin-top:clamp(40px,4vw,64px);
+  padding-top:26px;
+  border-top:1px solid var(--rule-dark);
+}
+.fact dt{ color:var(--bone-dim); margin-bottom:8px; }
+.fact dd{ margin:0; font-size:1rem; }
+
+/* ── 09 Founders (paper) ───────────────────────────────── */
+
+.founders{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  gap:clamp(32px,4vw,72px);
+  margin-top:clamp(44px,5vw,68px);
+}
+.founder{
+  border-top:1px solid var(--rule-light);
+  padding-top:28px;
+}
+.founder__initial{
+  font-family:var(--display);
+  font-size:clamp(3.2rem,6vw,4.6rem);
+  line-height:1;
+  color:var(--amber-deep);
+  display:block;
+  margin-bottom:20px;
+}
+.founder__role{ color:var(--ink-dim); margin:0 0 12px; }
+.founder h3{ margin:0 0 16px; }
+.founder p{ color:var(--ink-dim); font-size:.975rem; }
+.founder__quote{
+  margin-top:22px;
+  padding-top:20px;
+  border-top:1px solid var(--rule-light);
+  font-family:var(--display);
+  font-style:italic;
+  font-size:1.0625rem;
+  line-height:1.45;
+  color:var(--ink);
+  max-width:34ch;
+}
+.why{
+  margin-top:clamp(44px,5vw,72px);
+  padding-top:clamp(26px,3vw,36px);
+  border-top:1px solid var(--rule-light);
+  max-width:66ch;
+}
+.why .mono-tag{ color:var(--ink-dim); display:block; margin-bottom:14px; }
+.why p{ color:var(--ink); font-size:1.0625rem; }
+
+/* ── Book ──────────────────────────────────────────────── */
+
+.book{ background:var(--ground-2); border-top:1px solid var(--rule-dark); }
+
+.book__head{ max-width:66ch; }
+.book__kicker{ color:var(--amber); margin:0 0 20px; }
+.book__direct{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px clamp(20px,3vw,44px);
+  margin-top:clamp(28px,3vw,40px);
+  padding-top:22px;
+  border-top:1px solid var(--rule-dark);
+}
+.book__direct a{
+  font-family:var(--mono);
+  font-size:.8125rem;
+  letter-spacing:.06em;
+  color:var(--amber);
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+  transition:border-color .2s ease;
+}
+.book__direct a:hover{ border-bottom-color:var(--amber); }
+
+.form{
+  margin-top:clamp(48px,6vw,80px);
+  padding-top:clamp(36px,4vw,52px);
+  border-top:1px solid var(--amber);
+  max-width:880px;
+}
+.form__grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:clamp(20px,2.4vw,32px);
+}
+.field{ display:flex; flex-direction:column; gap:10px; }
+.field--full{ grid-column:1 / -1; }
+.field label{
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--bone-dim);
+}
+.field input,
+.field select{
+  font-family:var(--body);
+  font-size:1rem;
+  font-weight:300;
+  color:var(--bone);
+  background:transparent;
+  border:0;
+  border-bottom:1px solid var(--rule-dark);
+  padding:10px 0;
+  border-radius:0;
+  transition:border-color .2s ease;
+}
+.field select{
+  appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--amber) 50%),linear-gradient(135deg,var(--amber) 50%,transparent 50%);
+  background-position:calc(100% - 11px) calc(50% + 1px), calc(100% - 6px) calc(50% + 1px);
+  background-size:5px 5px,5px 5px;
+  background-repeat:no-repeat;
+  padding-right:26px;
+}
+.field select option{ background:var(--ground-2); color:var(--bone); }
+.field input:focus,
+.field select:focus{ outline:none; border-bottom-color:var(--amber); }
+.field input::placeholder{ color:rgba(179,161,132,.6); }
+
+.hp{ position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
+
+.form__foot{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:18px clamp(20px,3vw,36px);
+  margin-top:clamp(32px,4vw,44px);
+}
+.form__note{
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.1em;
+  color:var(--bone-dim);
+  margin:0;
+  max-width:44ch;
+}
+.form__status{
+  margin:20px 0 0;
+  font-family:var(--mono);
+  font-size:.75rem;
+  letter-spacing:.06em;
+  color:var(--amber);
+}
+
+/* ── Footer ────────────────────────────────────────────── */
+
+.foot{ border-top:1px solid var(--rule-dark); }
+.foot__top{
+  display:grid;
+  grid-template-columns:minmax(0,1.6fr) repeat(auto-fit,minmax(150px,1fr));
+  gap:clamp(32px,4vw,64px);
+  padding-block:clamp(52px,6vw,84px);
+}
+.foot__brand .badge{ text-decoration:none; }
+.foot__brand p{
+  margin-top:18px;
+  color:var(--bone-dim);
+  font-size:.9375rem;
+  max-width:34ch;
+}
+.foot__col h4{
+  font-family:var(--mono);
+  font-weight:500;
+  font-size:.6875rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--amber);
+  margin:0 0 18px;
+}
+.foot__col ul{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px; }
+.foot__col a{
+  color:var(--bone-dim);
+  text-decoration:none;
+  font-size:.9375rem;
+  transition:color .2s ease;
+}
+.foot__col a:hover{ color:var(--bone); }
+.foot__col li{ color:var(--bone-dim); font-size:.9375rem; }
+
+.foot__bar{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:12px 24px;
+  padding-block:24px calc(24px + env(safe-area-inset-bottom,0px));
+  border-top:1px solid var(--rule-dark);
+  color:var(--bone-dim);
+}
+
+/* ── Motion (opt-in, page is complete without JS) ──────── */
+
+@media (prefers-reduced-motion: no-preference){
+  .hero__line,
+  .hero__sub,
+  .hero__meta,
+  .hero__eyebrow{ animation:rise .9s cubic-bezier(.22,.61,.36,1) both; }
+  .hero__eyebrow{ animation-delay:.05s; }
+  .hero__line:nth-of-type(1){ animation-delay:.15s; }
+  .hero__line:nth-of-type(2){ animation-delay:.25s; }
+  .hero__line:nth-of-type(3){ animation-delay:.35s; }
+  .hero__sub{ animation-delay:.5s; }
+  .hero__meta{ animation-delay:.6s; }
+  .hero__rule{ animation:draw 1s cubic-bezier(.22,.61,.36,1) .45s both; }
+}
+
+@keyframes rise{
+  from{ opacity:0; transform:translateY(20px); }
+  to{ opacity:1; transform:none; }
+}
+@keyframes draw{
+  from{ transform:scaleX(0); }
+  to{ transform:scaleX(1); }
+}
+
+@media print{
+  .nav, .form, .btn{ display:none; }
+  body{ background:#fff; color:#000; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════════ -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="mark" href="#top" aria-label="The Agency DXB, back to top">
+      <span class="mark__wm"><span class="t">THE</span><span class="a">AGENCY</span></span>
+      <span class="mark__dxb">DXB</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="#manifesto">Manifesto</a></li>
+        <li><a href="#pillars">Pillars</a></li>
+        <li><a href="#activations">Activations</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#founders">Founders</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="#book"><span class="btn__long">Book a consultation</span><span class="btn__short">Book</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ══ HERO ═════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="wrap">
+    <p class="hero__eyebrow">A culinary collective  -  Dubai, est. 2025</p>
+
+    <h1 class="hero__title d-xl">
+      <span class="hero__line">Where</span>
+      <span class="hero__line hero__line--mid">chefs <span class="hero__amp">&amp;</span> brands</span>
+      <span class="hero__line it">meet.</span>
+    </h1>
+
+    <div class="hero__rule" aria-hidden="true"></div>
+
+    <p class="hero__sub">
+      We represent the world's most exciting chefs and food brands - and produce
+      the activations that bring them together.
+    </p>
+
+    <p class="hero__meta mono-tag">
+      <span>The Agency</span>
+      <span>Dubai · GCC · Europe</span>
+      <span>Women-led · By design</span>
+    </p>
+  </div>
+</section>
+
+<!-- ══ 01 · MANIFESTO ═══════════════════════════════════ -->
+<section class="band" id="manifesto">
+  <div class="wrap">
+    <p class="eyebrow"><span class="eyebrow__num">01</span><span class="eyebrow__label">Who we are</span></p>
+
+    <div class="split">
+      <h2 class="d-l">A culinary collective.<br><span class="it">A meeting place.</span></h2>
+
+      <div>
+        <p class="lede">
+          The Agency was founded on a simple belief - that food is the universal language,
+          and that the best things happen when the right people meet over a table.
+          We exist to create those meetings.
+        </p>
+        <p class="lede">
+          We represent chefs whose work deserves a global audience. We represent brands
+          ready to grow with intention. And we produce the activations between them -
+          the partnerships, projects, and press moments that move our industry forward.
+        </p>
+        <p class="lede">
+          Rooted in Dubai, drawing on Arabic and Mediterranean traditions of hospitality,
+          we work across the GCC, Europe and beyond. Local in soul. International in reach.
+        </p>
+      </div>
+    </div>
+
+    <blockquote class="quote">
+      "The best things happen when the right people meet over a table."
+    </blockquote>
+  </div>
+</section>
+
+<!-- ══ 02 · POSITIONING ═════════════════════════════════ -->
+<section class="band verbs">
+  <div class="wrap">
+    <p class="eyebrow"><span class="eyebrow__num">02</span><span class="eyebrow__label">The positioning</span></p>
+
+    <ul class="verbs__list">
+      <li>We represent.</li>
+      <li>We activate.</li>
+      <li>We connect.</li>
+    </ul>
+
+    <p class="lede">
+      Three verbs. One discipline. We don't pitch chefs to brands and walk away -
+      we represent both sides, produce the meeting, and stay in the room.
+    </p>
+  </div>
+</section>
+
+<!-- ══ 03 · THE MODEL ═══════════════════════════════════ -->
+<section class="band" id="model">
+  <div class="wrap">
+    <p class="eyebrow"><span class="eyebrow__num">03</span><span class="eyebrow__label">The model</span></p>
+
+    <div class="split">
+      <h2 class="d-l">Two worlds.<br><span class="it">One table.</span></h2>
+      <p class="lede">
+        We represent both sides of every great culinary story - the talent and the brand -
+        then we bring them together at the same table.
+      </p>
+    </div>
+
+    <div class="model">
+      <div class="model__col">
+        <p class="model__kicker mono-tag">- For chefs</p>
+        <h3 class="d-m">The talent side.</h3>
+        <p class="lede" style="margin-top:16px;font-size:1rem">
+          From rising stars to established names, we manage the careers of culinary talents -
+          placing them in the right kitchens, brand deals, residencies, and press moments.
+        </p>
+        <ol class="model__list">
+          <li>Career strategy &amp; positioning</li>
+          <li>Brand &amp; commercial deals</li>
+          <li>Pop-ups, residencies &amp; activations</li>
+          <li>Media &amp; press representation</li>
+        </ol>
+      </div>
+
+      <div class="model__join" aria-hidden="true">
+        <span class="model__amp">&amp;</span>
+        <span class="mono-tag">The Agency</span>
+      </div>
+
+      <div class="model__col">
+        <p class="model__kicker mono-tag">- For brands</p>
+        <h3 class="d-m">The brand side.</h3>
+        <p class="lede" style="margin-top:16px;font-size:1rem">
+          We represent and develop food &amp; lifestyle brands - sharpening positioning,
+          opening doors to chefs and venues, and producing activations that turn products into moments.
+        </p>
+        <ol class="model__list">
+          <li>Brand positioning &amp; strategy</li>
+          <li>Chef &amp; talent partnerships</li>
+          <li>Activations &amp; launches</li>
+          <li>PR, press &amp; storytelling</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 04 · FOUR PILLARS (paper) ════════════════════════ -->
+<section class="band paper" id="pillars">
+  <div class="wrap">
+    <p class="eyebrow"><span class="eyebrow__num">04</span><span class="eyebrow__label">The offer</span></p>
+
+    <div class="split">
+      <h2 class="d-l">Four pillars.</h2>
+      <p class="lede">
+        A focused offer for an industry that rewards focus.
+        Each pillar exists to make the others stronger.
+      </p>
+    </div>
+
+    <div class="pillars">
+      <article class="pillar reveal">
+        <span class="pillar__no">- 01</span>
+        <h3 class="d-s">Chef Representation</h3>
+        <p>We represent chefs as careers, not gigs. Strategy, brand deals, residencies,
+           and the long view - protecting the craft while opening every door it deserves.</p>
+      </article>
+      <article class="pillar reveal">
+        <span class="pillar__no">- 02</span>
+        <h3 class="d-s">Brand Representation</h3>
+        <p>From emerging food brands to established hospitality groups - we represent,
+           position, and develop, building partnerships that scale a brand with intention.</p>
+      </article>
+      <article class="pillar reveal">
+        <span class="pillar__no">- 03</span>
+        <h3 class="d-s">Activations &amp; Collabs</h3>
+        <p>The meeting in the middle, made real. Pop-ups, launches, capsules, hosted tables,
+           festivals - produced end-to-end, designed to travel.</p>
+      </article>
+      <article class="pillar reveal">
+        <span class="pillar__no">- 04</span>
+        <h3 class="d-s">PR &amp; Communication</h3>
+        <p>Press, positioning, public narrative. We place our chefs and brands in the
+           conversations that matter - across the GCC, Europe, and the international press.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 05 · ACTIVATIONS ═════════════════════════════════ -->
+<section class="band" id="activations">
+  <div class="wrap">
+    <p class="eyebrow"><span class="eyebrow__num">05</span><span class="eyebrow__label">Activations</span></p>
+
+    <div class="split">
+      <h2 class="d-l">The work happens<br><span class="it">at the activation.</span></h2>
+      <p class="lede">
+        Activations are where the brand meets the chef, and both meet the audience.
+        Producing those moments - and making them travel - is our craft.
+        Seven formats. One language.
+      </p>
+    </div>
+
+    <div class="menu">
+      <article class="course">
+        <span class="course__code">A · 01</span>
+        <div>
+          <h3 class="course__name d-s">Pop-ups &amp; Residencies</h3>
+          <p class="course__tag">Limited-run kitchens that travel.</p>
+        </div>
+        <p class="course__body">From four-night chef takeovers to multi-city residencies.
+          The chef cooks. We do everything else.</p>
+      </article>
+
+      <article class="course">
+        <span class="course__code">A · 02</span>
+        <div>
+          <h3 class="course__name d-s">Brand Launches</h3>
+          <p class="course__tag">Launches that read like events.</p>
+        </div>
+        <p class="course__body">Product drops, restaurant openings, campaign moments -
+          designed as guest experiences, not press conferences.</p>
+      </article>
+
+      <article class="course">
+        <span class="course__code">A · 03</span>
+        <div>
+          <h3 class="course__name d-s">Capsule Collaborations</h3>
+          <p class="course__tag">Chef × brand.</p>
+        </div>
+        <p class="course__body">Co-created products, limited menus, signature moments -
+          the meeting in the middle made tangible.</p>
+      </article>
+
+      <article class="course">
+        <span class="course__code">A · 04</span>
+        <div>
+          <h3 class="course__name d-s">Private Tables &amp; Hosted Dinners</h3>
+          <p class="course__tag">Twelve seats. One narrative.</p>
+        </div>
+        <p class="course__body">Curated tables for brands wanting to meet press, partners,
+          and the right rooms - slow, intimate, and intentional.</p>
+      </article>
+
+      <article class="course">
+        <span class="course__code">A · 05</span>
+        <div>
+          <h3 class="course__name d-s">Cultural Programming</h3>
+          <p class="course__tag">Festivals &amp; series.</p>
+        </div>
+        <p class="course__body">Multi-chef events and ongoing cultural programmes -
+          built to define a venue or a city moment.</p>
+      </article>
+
+      <article class="course">
+        <span class="course__code">A · 06</span>
+        <div>
+          <h3 class="course__name d-s">Content &amp; Press Moments</h3>
+          <p class="course__tag">The activation that travels.</p>
+        </div>
+        <p class="course__body">Every activation is documented as content. Editorial-grade,
+          social-native, press-ready - so the dinner reaches further than the room.</p>
+      </article>
+
+      <article class="course">
+        <span class="course__code">A · 07</span>
+        <div>
+          <h3 class="course__name d-s">Bespoke &amp; Signature</h3>
+          <p class="course__tag">When the brief doesn't exist yet.</p>
+        </div>
+        <p class="course__body">Some activations don't fit a category. We architect from a blank
+          page - concept, casting, design, hospitality, comms. Every activation is a story;
+          the format is just the chapter break.</p>
+      </article>
+    </div>
+
+    <div class="travel">
+      <div>
+        <p class="travel__label mono-tag">→ Built to travel</p>
+        <h3 class="d-m">Designed once.<br><span class="it">Remembered always.</span></h3>
+      </div>
+      <p class="lede">
+        Every activation is engineered to live three lives:
+        in the room, in the feed, and in the press.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 06 · APPROACH ════════════════════════════════════ -->
+<section class="band verbs" id="approach">
+  <div class="wrap">
+    <p class="eyebrow"><span class="eyebrow__num">06</span><span class="eyebrow__label">Our approach</span></p>
+
+    <div class="split">
+      <h2 class="d-l">We don't sell taste.<br><span class="it">We connect it.</span></h2>
+    </div>
+
+    <div class="principles">
+      <article class="principle reveal">
+        <span class="principle__no">I.</span>
+        <h3 class="d-s">The right match.</h3>
+        <p>A great activation starts with a great fit. We pair chefs and brands by values
+           and chemistry first - the deal terms come after the trust does.</p>
+      </article>
+      <article class="principle reveal">
+        <span class="principle__no">II.</span>
+        <h3 class="d-s">Story over spectacle.</h3>
+        <p>Trends fade. Narrative compounds. Every press moment, partnership, and activation
+           is a chapter in a longer book - we build careers and brands that endure.</p>
+      </article>
+      <article class="principle reveal">
+        <span class="principle__no">III.</span>
+        <h3 class="d-s">Rooted, not regional.</h3>
+        <p>We're proudly anchored in Dubai, drawing on Arabic and Mediterranean traditions of
+           hospitality - but we represent globally. Heritage is a launchpad, never a ceiling.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 07 · PROCESS (paper) ═════════════════════════════ -->
+<section class="band paper" id="process">
+  <div class="wrap">
+    <p class="eyebrow"><span class="eyebrow__num">07</span><span class="eyebrow__label">How we produce</span></p>
+
+    <div class="split">
+      <h2 class="d-l">A five-act story.</h2>
+      <p class="lede">
+        Concept to comms. We own all five acts - so chefs can cook and brands can host,
+        and neither has to think about logistics, press lists, or what happens at 11pm
+        when the third wave arrives.
+      </p>
+    </div>
+
+    <div class="acts">
+      <article class="act">
+        <span class="act__no">- 01</span>
+        <h3 class="d-s">Concept</h3>
+        <p>Brief, audience, ambition. We start with the story - and reverse-engineer
+           the activation from there.</p>
+      </article>
+      <article class="act">
+        <span class="act__no">- 02</span>
+        <h3 class="d-s">Casting</h3>
+        <p>The right chef, the right brand, the right room. Chemistry over CV.
+           Fit before fame.</p>
+      </article>
+      <article class="act">
+        <span class="act__no">- 03</span>
+        <h3 class="d-s">Kitchen</h3>
+        <p>Menu, sourcing, logistics, equipment, kitchen brigade. Operational precision
+           in service of the craft.</p>
+      </article>
+      <article class="act">
+        <span class="act__no">- 04</span>
+        <h3 class="d-s">Hospitality</h3>
+        <p>Room design, guest list, service direction, hosting. The moment the dinner
+           becomes an event.</p>
+      </article>
+      <article class="act">
+        <span class="act__no">- 05</span>
+        <h3 class="d-s">Comms</h3>
+        <p>Capture, press, post. The activation that travels - beyond the room,
+           into the feed and the headlines.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 08 · BY THE NUMBERS ══════════════════════════════ -->
+<section class="band band--tight" id="numbers">
+  <div class="wrap">
+    <p class="eyebrow"><span class="eyebrow__num">08</span><span class="eyebrow__label">By the numbers</span></p>
+
+    <h2 class="d-l">Built for focus,<br><span class="it">designed to scale.</span></h2>
+
+    <div class="figures">
+      <div class="figure"><span class="figure__n">04</span><span class="figure__l mono-tag">Pillars of practice</span></div>
+      <div class="figure"><span class="figure__n">DXB</span><span class="figure__l mono-tag">Headquartered in Dubai</span></div>
+      <div class="figure"><span class="figure__n">07</span><span class="figure__l mono-tag">Activation formats</span></div>
+      <div class="figure"><span class="figure__n">&infin;</span><span class="figure__l mono-tag">Stories to tell</span></div>
+    </div>
+
+    <dl class="facts">
+      <div class="fact"><dt class="mono-tag">Geography</dt><dd>GCC · Europe · Worldwide</dd></div>
+      <div class="fact"><dt class="mono-tag">Founded</dt><dd>2025</dd></div>
+      <div class="fact"><dt class="mono-tag">Languages</dt><dd>EN · FR · AR</dd></div>
+      <div class="fact"><dt class="mono-tag">Working with</dt><dd>Chefs &amp; Brands</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ══ 09 · FOUNDERS (paper) ════════════════════════════ -->
+<section class="band paper" id="founders">
+  <div class="wrap">
+    <p class="eyebrow"><span class="eyebrow__num">09</span><span class="eyebrow__label">The founders</span></p>
+
+    <div class="split">
+      <h2 class="d-l">Two women.<br><span class="it">One table.</span></h2>
+      <p class="lede">
+        The Agency is women-led and women-built. Founded by two friends and partners who have
+        spent their careers behind the scenes of the food world - and have decided it deserves
+        a better stage.
+      </p>
+    </div>
+
+    <!-- TODO: replace the placeholder names below with the real founder names -->
+    <div class="founders">
+      <article class="founder">
+        <span class="founder__initial">S</span>
+        <p class="founder__role mono-tag">- Co-Founder &amp; Partner</p>
+        <h3 class="d-m">Co-Founder One.</h3>
+        <p>A passionate advocate for chefs and the people behind the plate. Years spent in
+           hospitality, brand-building, and the rooms where decisions get made - now in service
+           of the talent who too often go unrepresented.</p>
+        <p class="founder__quote">"Every chef has a story. Our job is to make sure the world
+           hears it - on the chef's terms."</p>
+      </article>
+
+      <article class="founder">
+        <span class="founder__initial">Z</span>
+        <p class="founder__role mono-tag">- Co-Founder &amp; Partner</p>
+        <h3 class="d-m">Co-Founder Two.</h3>
+        <p>A devotee of the art of hosting - the small details that turn a meal into a memory.
+           Background in brand strategy and cultural production, with a conviction that the table
+           is where culture happens.</p>
+        <p class="founder__quote">"Hospitality is the oldest art form. We're just here to give it
+           back its stage."</p>
+      </article>
+    </div>
+
+    <div class="why">
+      <span class="mono-tag">- Why we built this</span>
+      <p>Because the food world deserves an agency that respects the craft, the people, and the
+         art of hosting in equal measure. Women-led, by design.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BOOK ═════════════════════════════════════════════ -->
+<section class="band book" id="book">
+  <div class="wrap">
+    <div class="book__head">
+      <p class="book__kicker mono-tag">- You are a chef, a brand, an activation -</p>
+      <h2 class="d-l">Let's meet<br><span class="it">at the table.</span></h2>
+      <p class="lede" style="margin-top:24px">
+        A 30-minute conversation. About your chef, your brand, or the activation you've been
+        thinking about. No pitch deck required - just tell us what you're working on.
+      </p>
+
+      <div class="book__direct">
+        <a href="mailto:collective@theagencydxb.com">collective@theagencydxb.com</a>
+        <a href="https://instagram.com/theagencydxb" target="_blank" rel="noopener">@theagencydxb</a>
+      </div>
+    </div>
+
+    <!--
+      ─────────────────────────────────────────────────────────────
+      FORM SETUP - one line to go live.
+      Create a free form at https://formspree.io (or Getform / Basin),
+      then replace REPLACE_WITH_YOUR_FORM_ID in the action below.
+      Until you do, the button opens the visitor's mail client instead.
+      ─────────────────────────────────────────────────────────────
+    -->
+    <form class="form" id="consult"
+          action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID"
+          method="POST">
+
+      <h3 class="d-m" style="margin-bottom:12px">Book a consultation.</h3>
+      <p class="lede" style="font-size:1rem;margin-bottom:34px">
+        Tell us a little about yourself. We'll be in touch within 48 hours.
+      </p>
+
+      <div class="form__grid">
+        <div class="field">
+          <label for="f-name">Full name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+        </div>
+
+        <div class="field">
+          <label for="f-company">Company / Kitchen</label>
+          <input id="f-company" name="company" type="text" autocomplete="organization" placeholder="Where you work">
+        </div>
+
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required placeholder="you@domain.com">
+        </div>
+
+        <div class="field">
+          <label for="f-who">I am a…</label>
+          <select id="f-who" name="profile" required>
+            <option value="">Select one</option>
+            <option>Chef</option>
+            <option>Food / Beverage Brand</option>
+            <option>Hospitality Group</option>
+            <option>Venue / Hotel</option>
+            <option>Press</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="f-interest">Interest</label>
+          <select id="f-interest" name="interest" required>
+            <option value="">Select one</option>
+            <option>Representation</option>
+            <option>Producing an activation</option>
+            <option>A collaboration</option>
+            <option>Press &amp; PR</option>
+            <option>Something else</option>
+          </select>
+        </div>
+
+        <div class="field field--full">
+          <label for="f-line">In one line (optional)</label>
+          <input id="f-line" name="message" type="text" placeholder="What are you working on?">
+        </div>
+      </div>
+
+      <!-- spam honeypot - hidden from people, tempting to bots -->
+      <div class="hp" aria-hidden="true">
+        <label for="f-website">Website</label>
+        <input id="f-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+      </div>
+
+      <div class="form__foot">
+        <button class="btn btn--solid" type="submit">Request a consultation →</button>
+        <p class="form__note">
+          We reply within 48 hours. Your details stay with us - never shared.
+        </p>
+      </div>
+
+      <p class="form__status" id="form-status" hidden></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ══ FOOTER ═══════════════════════════════════════════ -->
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="badge" href="#top" aria-label="The Agency DXB, back to top">
+        <span class="badge__stack">
+          <span class="badge__ar" aria-hidden="true">الوكالة</span>
+          <span class="badge__wm"><span class="t">THE</span><span class="a">AGENCY</span></span>
+        </span>
+        <span class="badge__dxb">DXB</span>
+      </a>
+      <p>A culinary collective. Where chefs &amp; brands meet. Dubai, est. 2025.</p>
+    </div>
+
+    <div class="foot__col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#manifesto">Manifesto</a></li>
+        <li><a href="#pillars">Four Pillars</a></li>
+        <li><a href="#activations">Activations</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#founders">Founders</a></li>
+      </ul>
+    </div>
+
+    <div class="foot__col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="mailto:collective@theagencydxb.com">collective@theagencydxb.com</a></li>
+        <li><a href="https://instagram.com/theagencydxb" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#book">Book a consultation</a></li>
+      </ul>
+    </div>
+
+    <div class="foot__col">
+      <h4>Studio</h4>
+      <ul>
+        <li>Dubai, UAE</li>
+        <li>GCC · Europe · Worldwide</li>
+        <li>EN · FR · AR</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap foot__bar mono-tag">
+    <span>© 2026 The Agency · All rights reserved</span>
+    <span>Where chefs &amp; brands meet</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  document.documentElement.classList.add("js");
+
+  /* Nav hairline appears once the hero has scrolled past */
+  var nav = document.getElementById("nav");
+  var onScroll = function () {
+    nav.classList.toggle("is-stuck", window.scrollY > 24);
+  };
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  /* Consultation form.
+     With a real endpoint the browser posts normally.
+     Without one, compose an email so no enquiry is ever lost. */
+  var form = document.getElementById("consult");
+  var status = document.getElementById("form-status");
+
+  form.addEventListener("submit", function (ev) {
+    if (form.action.indexOf("REPLACE_WITH_YOUR_FORM_ID") === -1) return;
+
+    ev.preventDefault();
+    var d = new FormData(form);
+    var lines = [
+      "Name: "      + (d.get("name")     || ""),
+      "Company: "   + (d.get("company")  || ""),
+      "Email: "     + (d.get("email")    || ""),
+      "I am a: "    + (d.get("profile")  || ""),
+      "Interest: "  + (d.get("interest") || ""),
+      "",
+      (d.get("message") || "")
+    ].join("\n");
+
+    window.location.href =
+      "mailto:collective@theagencydxb.com" +
+      "?subject=" + encodeURIComponent("Consultation request - " + (d.get("name") || "The Agency")) +
+      "&body="    + encodeURIComponent(lines);
+
+    status.hidden = false;
+    status.textContent = "Opening your mail app - or write to us at collective@theagencydxb.com";
+  });
+})();
+</script>
+
+</body>
+</html>
